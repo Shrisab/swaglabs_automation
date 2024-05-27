@@ -62,8 +62,8 @@ def select_product_and_add_to_cart(driver):
         return None
 
 def send_email(to_address, subject, body):
-    from_address = "shrisabtestacc@gmail.com"
-    password = "zece cruh ddwa ieet"  # Use App Password if 2FA is enabled
+    from_address = "example@example.com"
+    password = ""  # Use App Password if 2FA is enabled
 
     try:
         # Set up the MIME
@@ -127,7 +127,7 @@ def login(url, username, password, username_field_id, password_field_id, login_b
             
             # Send a confirmation email with the product price
         email_body = f"Your purchase has been successfully completed.\n\nProduct Price: {product_price}"
-        send_email('shrisab12@gmail.com', 'Purchase Successful', email_body)
+        send_email('example@gmail.com', 'Purchase Successful', email_body)
         
     except Exception as e:
         print(f"Error in login: {e}")
